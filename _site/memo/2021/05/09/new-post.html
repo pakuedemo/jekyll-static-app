@@ -76,6 +76,12 @@
 
 <p>ということで、この方法を使ってしまえばどのような静的サイトジェネレーターでも一緒になってしまうという残念な感じになってしまう</p>
 
+<p>WSL2の環境でJekyll serveを使うとエラーが起きる。これはProcessがポーリングするところでWSLの実装に起因するエラーのよう。以下のコマンドを使えばエラーを回避して開発サーバを可動させることができる。</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle exec jekyll serve --force_polling --livereload
+</code></pre></div></div>
+<p>forc_pollingというのがポイントとなる</p>
+
+
   </div><a class="u-url" href="/memo/2021/05/09/new-post.html" hidden></a>
 </article>
 
