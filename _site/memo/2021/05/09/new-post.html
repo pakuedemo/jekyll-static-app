@@ -17,7 +17,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Memo" />
 <script type="application/ld+json">
-{"headline":"Memo","dateModified":"2021-05-09T18:53:00+09:00","datePublished":"2021-05-09T18:53:00+09:00","description":"Jekyllを使って静的サイトを構築し、Azure Static WebAppへGithubを介してアップするのを試してみた。 環境の構築","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"/memo/2021/05/09/new-post.html"},"url":"/memo/2021/05/09/new-post.html","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","description":"Jekyllを使って静的サイトを構築し、Azure Static WebAppへGithubを介してアップするのを試してみた。 環境の構築","headline":"Memo","url":"/memo/2021/05/09/new-post.html","datePublished":"2021-05-09T18:53:00+09:00","dateModified":"2021-05-09T18:53:00+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"/memo/2021/05/09/new-post.html"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Pakue Jekyll Site" /></head>
 <body><header class="site-header" role="banner">
@@ -80,6 +80,14 @@
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle exec jekyll serve --force_polling --livereload
 </code></pre></div></div>
 <p>forc_pollingというのがポイントとなる</p>
+
+<p>参照： https://github.com/microsoft/WSL/issues/216</p>
+
+<h2 id="jekyll-to-azure-blob-strage">Jekyll to Azure blob Strage</h2>
+
+<p>Azure CLIを使えば、普通にコンテンツをアップロードできる</p>
+
+<p><a href="https://www.cloudmanav.com/azure/deploying-jekyll-azure-blob-storage/">Deploying Jekyll Websites on Azure Blob Storage</a></p>
 
 
   </div><a class="u-url" href="/memo/2021/05/09/new-post.html" hidden></a>
